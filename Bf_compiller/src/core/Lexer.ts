@@ -2,7 +2,7 @@ import { Token } from "./Token";
 import { TokenType } from "./TokenType";
 
 
-export class Lexer{
+class Lexer{
 
     public Code:string
     public TokenList:Token[] = []
@@ -45,5 +45,6 @@ export class Lexer{
             }
         }
     }
-
 }
+
+export default Lexer
