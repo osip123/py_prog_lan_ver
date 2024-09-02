@@ -1,6 +1,10 @@
 import Lexer from './core/Lexer';
+import { Token } from './core/Token';
+import { TokenType } from './core/TokenType';
 
 
 let lexer = new Lexer('+++')
 
-lexer.create_token_list()
+const TokenArry = lexer.create_token_list()
+
+console.log(TokenArry)
