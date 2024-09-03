@@ -6,7 +6,7 @@ class Parser{
 
    public TokensArry:Token[];
    private counter = 0;
-   private counter_Arry:number[] = []
+   private counter_Arry:any[] = []
 
    constructor(TokenArry){
     this.TokensArry = TokenArry;
@@ -21,12 +21,13 @@ class Parser{
         if (this.TokensArry[index].Type === TokenType.RPAR){
             while(this.TokensArry[index].Type === TokenType.LPAR){
                 index--;
-                this.counter --
+                this.counter ++
             }
         }
 
         if (this.TokensArry[index].Type === TokenType.PLUS) {
-            
+            this.counter_Arry.push(this.counter);
+            this.counter = 0;
         }
 
     }
