@@ -44,6 +44,7 @@ class Lexer{
                 this.Token_current = null;
             }
         }
+        return this.TokenList
     }
 }
 

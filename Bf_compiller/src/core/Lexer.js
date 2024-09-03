@@ -35,6 +35,7 @@ var Lexer = /** @class */ (function () {
                 this.Token_current = null;
             }
         }
+        return this.TokenList;
     };
     return Lexer;
 }());

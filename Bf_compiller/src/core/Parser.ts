@@ -37,5 +37,8 @@ class Parser{
             this.counter_Arry.push('-');
         }
     }
+    return this.TokensArry
    }
 }
+
+export default Parser
