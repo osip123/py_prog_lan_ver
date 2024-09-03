@@ -1,6 +1,6 @@
 
 
-class PlusNode{
+class MinusNode{
     public x: number;
     public y: number;
 
@@ -10,9 +10,9 @@ class PlusNode{
     }
 
     calc(){
-        return this.x + this.y;
+        return this.x - this.y;
     }
 
 }
 
-export default PlusNode
+export default MinusNode

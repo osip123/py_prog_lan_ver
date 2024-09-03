@@ -28,8 +28,14 @@ class Parser{
         if (this.TokensArry[index].Type === TokenType.PLUS) {
             this.counter_Arry.push(this.counter);
             this.counter = 0;
+            this.counter_Arry.push('+')
         }
 
+        if (this.TokensArry[index].Type == TokenType.MINUS){
+            this.counter_Arry.push(this.counter);
+            this.counter = 0;
+            this.counter_Arry.push('-');
+        }
     }
    }
 }
