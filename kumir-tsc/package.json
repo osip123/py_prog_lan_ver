@@ -2,7 +2,6 @@
   "name": "kumir-tsc",
   "version": "1.0.0",
   "main": "src/index.ts",
-  "type": "module",
   "scripts": {
     "run": "node src/index.js",
     "build": "tsc src/index.ts",
