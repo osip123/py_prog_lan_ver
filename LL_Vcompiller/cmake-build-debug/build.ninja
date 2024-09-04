@@ -55,6 +55,18 @@ build CMakeFiles/LL_Vcompiller.dir/src/main.cpp.obj: CXX_COMPILER__LL_Vcompiller
   OBJECT_DIR = CMakeFiles\LL_Vcompiller.dir
   OBJECT_FILE_DIR = CMakeFiles\LL_Vcompiller.dir\src
 
+build CMakeFiles/LL_Vcompiller.dir/src/core/Lexer.cpp.obj: CXX_COMPILER__LL_Vcompiller_unscanned_Debug C$:/Users/endoc/CLionProjects/math_parser/py_prog_lan_ver/LL_Vcompiller/src/core/Lexer.cpp || cmake_object_order_depends_target_LL_Vcompiller
+  DEP_FILE = CMakeFiles\LL_Vcompiller.dir\src\core\Lexer.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\LL_Vcompiller.dir
+  OBJECT_FILE_DIR = CMakeFiles\LL_Vcompiller.dir\src\core
+
+build CMakeFiles/LL_Vcompiller.dir/src/core/Parser.cpp.obj: CXX_COMPILER__LL_Vcompiller_unscanned_Debug C$:/Users/endoc/CLionProjects/math_parser/py_prog_lan_ver/LL_Vcompiller/src/core/Parser.cpp || cmake_object_order_depends_target_LL_Vcompiller
+  DEP_FILE = CMakeFiles\LL_Vcompiller.dir\src\core\Parser.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\LL_Vcompiller.dir
+  OBJECT_FILE_DIR = CMakeFiles\LL_Vcompiller.dir\src\core
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target LL_Vcompiller
@@ -63,7 +75,7 @@ build CMakeFiles/LL_Vcompiller.dir/src/main.cpp.obj: CXX_COMPILER__LL_Vcompiller
 #############################################
 # Link the executable LL_Vcompiller.exe
 
-build LL_Vcompiller.exe: CXX_EXECUTABLE_LINKER__LL_Vcompiller_Debug CMakeFiles/LL_Vcompiller.dir/src/main.cpp.obj
+build LL_Vcompiller.exe: CXX_EXECUTABLE_LINKER__LL_Vcompiller_Debug CMakeFiles/LL_Vcompiller.dir/src/main.cpp.obj CMakeFiles/LL_Vcompiller.dir/src/core/Lexer.cpp.obj CMakeFiles/LL_Vcompiller.dir/src/core/Parser.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\LL_Vcompiller.dir
