@@ -21,6 +21,7 @@ public:
         pos = position;
     };
 
+
     public: void print(){
         std::cout << pos << std::endl;
         std::cout << buffer << std::endl;
