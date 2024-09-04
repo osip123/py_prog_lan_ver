@@ -13,8 +13,6 @@ export enum TokenTypes{
     MINUS,
     PLUS,
     COMADOT,
-    LPAR,
-    RPAR,
     LESS,
     MORE,
     LPAR,

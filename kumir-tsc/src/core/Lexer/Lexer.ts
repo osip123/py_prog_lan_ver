@@ -38,12 +38,14 @@ class Lexer{
             if (this.lexeme[i] == '-'){
                 let new_token = new Token(TokenTypes.MINUS, '*', '-')
                 this.Tokens_List.push(new_token)
-                // new_token.clear();
             }
             if (this.lexeme[i] == '+'){
                 let new_token = new Token(TokenTypes.PLUS, '*', '+')
                 this.Tokens_List.push(new_token)
-                // new_token.clear();
+            }
+            if (this.lexeme[i] < '9' && this.lexeme[i] > '0'){
+                let new_token = new Token(TokenTypes.INT, this.lexeme[i], 'var')
+                this.Tokens_List.push(new_token)
             }
         }
 

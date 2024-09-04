@@ -32,12 +32,14 @@ var Lexer = /** @class */ (function () {
             if (this.lexeme[i] == '-') {
                 var new_token = new Token_1.default(TokenTypes_1.TokenTypes.MINUS, '*', '-');
                 this.Tokens_List.push(new_token);
-                // new_token.clear();
             }
             if (this.lexeme[i] == '+') {
                 var new_token = new Token_1.default(TokenTypes_1.TokenTypes.PLUS, '*', '+');
                 this.Tokens_List.push(new_token);
-                // new_token.clear();
+            }
+            if (this.lexeme[i] < '9' && this.lexeme[i] > '0') {
+                var new_token = new Token_1.default(TokenTypes_1.TokenTypes.INT, this.lexeme[i], 'var');
+                this.Tokens_List.push(new_token);
             }
         }
         return this.Tokens_List;
