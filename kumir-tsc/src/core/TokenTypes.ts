@@ -17,4 +17,5 @@ export enum TokenTypes{
     MORE,
     LPAR,
     RPAR,
+    VAR,
 }

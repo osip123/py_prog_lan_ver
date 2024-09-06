@@ -3,9 +3,9 @@ import {TokenTypes} from "./TokenTypes";
 
 class Token{
 
-    public Type:TokenTypes | null;
-    public Buffer:string | null;
-    public Name:string | null;
+    public Type:TokenTypes;
+    public Buffer:string;
+    public Name:string;
 
     constructor(Type: TokenTypes, Buffer:string, Name:string) {
         this.Buffer = Buffer;
@@ -16,12 +16,12 @@ class Token{
     public __print():void{
         console.log(this.Buffer)
     }
-
-    public clear():void{
-        this.Buffer = null;
-        this.Type = null;
-        this.Name = null;
-    }
+    //
+    // public clear():void{
+    //     this.Buffer = null;
+    //     this.Type = null;
+    //     this.Name = null;
+    // }
 
 }
 

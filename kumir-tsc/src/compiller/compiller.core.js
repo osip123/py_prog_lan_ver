@@ -14,12 +14,22 @@ var CompillerCore = /** @class */ (function () {
             if (this.Compille_List[i].Type === TokenTypes_1.TokenTypes.START) {
             }
             if (this.Compille_List[i].Type === TokenTypes_1.TokenTypes.INT) {
+                this.compille_code = this.compille_code.concat("\n                    ".concat(this.Compille_List[i].Buffer, "\n                "));
+            }
+            if (this.Compille_List[i].Type === TokenTypes_1.TokenTypes.FLOAT) {
+                this.compille_code = this.compille_code.concat("\n                    ".concat(this.Compille_List[i].Buffer, "\n                "));
+            }
+            if (this.Compille_List[i].Type === TokenTypes_1.TokenTypes.VAR) {
+                this.compille_code = this.compille_code.concat("".concat(this.Compille_List[i].Buffer));
+            }
+            if (this.Compille_List[i].Type === TokenTypes_1.TokenTypes.EQ) {
+                this.compille_code = this.compille_code[i].concat('=');
             }
             if (this.Compille_List[i].Type === TokenTypes_1.TokenTypes.WHILE) {
-                this.compille_code.concat('while');
+                this.compille_code = this.compille_code.concat('while');
             }
             if (this.Compille_List[i].Type === TokenTypes_1.TokenTypes.LPAR) {
-                this.compille_code.concat('(');
+                this.compille_code = this.compille_code.concat('(');
                 if (this.Compille_List[i + 1].Type != TokenTypes_1.TokenTypes.INT
                     || this.Compille_List[i + 1].Type != TokenTypes_1.TokenTypes.FLOAT) {
                     var error = new Exseption_1.default(ExseptionTypes_1.default.Varr);
@@ -27,12 +37,18 @@ var CompillerCore = /** @class */ (function () {
                 }
             }
             if (this.Compille_List[i].Type === TokenTypes_1.TokenTypes.LPAR) {
-                this.compille_code.concat('(');
+                this.compille_code = this.compille_code.concat('(');
             }
             if (this.Compille_List[i].Type === TokenTypes_1.TokenTypes.RPAR) {
-                this.compille_code.concat(')');
+                this.compille_code = this.compille_code.concat(')');
             }
         }
+        console.log(this.compille_code);
+    };
+    CompillerCore.prototype.__run_code = function () {
+        this.__run_compille();
+        var output = fs.writeFile('./output.js', this.compille_code);
     };
     return CompillerCore;
 }());
+exports.default = CompillerCore;

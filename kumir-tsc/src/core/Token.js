@@ -9,11 +9,6 @@ var Token = /** @class */ (function () {
     Token.prototype.__print = function () {
         console.log(this.Buffer);
     };
-    Token.prototype.clear = function () {
-        this.Buffer = null;
-        this.Type = null;
-        this.Name = null;
-    };
     return Token;
 }());
 exports.default = Token;

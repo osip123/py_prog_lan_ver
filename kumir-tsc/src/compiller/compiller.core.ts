@@ -21,14 +21,29 @@ class CompillerCore {
 
             }
             if(this.Compille_List[i].Type === TokenTypes.INT){
-
+                this.compille_code = this.compille_code.concat(`
+                    ${this.Compille_List[i].Buffer}
+                `)
+            }
+            if (this.Compille_List[i].Type === TokenTypes.FLOAT){
+                this.compille_code = this.compille_code.concat(`
+                    ${this.Compille_List[i].Buffer}
+                `)
+            }
+            if (this.Compille_List[i].Type === TokenTypes.VAR){
+                this.compille_code = this.compille_code.concat(
+                    `${this.Compille_List[i].Buffer}`
+                )
+            }
+            if (this.Compille_List[i].Type === TokenTypes.EQ){
+                this.compille_code = this.compille_code[i].concat('=')
             }
             if (this.Compille_List[i].Type === TokenTypes.WHILE){
-                this.compille_code.concat('while')
+                this.compille_code = this.compille_code.concat('while')
             }
 
             if (this.Compille_List[i].Type === TokenTypes.LPAR){
-                this.compille_code.concat('(')
+                this.compille_code = this.compille_code.concat('(')
                 if(this.Compille_List[i + 1].Type != TokenTypes.INT
                 || this.Compille_List[i + 1].Type != TokenTypes.FLOAT){
                     const error = new Exseption(ExseptionTypes.Varr);
@@ -37,14 +52,24 @@ class CompillerCore {
             }
 
             if (this.Compille_List[i].Type === TokenTypes.LPAR){
-                this.compille_code.concat('(')
+                this.compille_code = this.compille_code.concat('(')
             }
 
             if (this.Compille_List[i].Type === TokenTypes.RPAR){
-                this.compille_code.concat(')')
+                this.compille_code = this.compille_code.concat(')')
             }
         }
+
+        console.log(this.compille_code)
+
+    }
+
+    __run_code(){
+        this.__run_compille();
+        const output = fs.writeFile('./output.js', this.compille_code);
     }
 
 
 }
+
+export default CompillerCore

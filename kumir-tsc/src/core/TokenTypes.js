@@ -21,4 +21,5 @@ var TokenTypes;
     TokenTypes[TokenTypes["MORE"] = 15] = "MORE";
     TokenTypes[TokenTypes["LPAR"] = 16] = "LPAR";
     TokenTypes[TokenTypes["RPAR"] = 17] = "RPAR";
+    TokenTypes[TokenTypes["VAR"] = 18] = "VAR";
 })(TokenTypes || (exports.TokenTypes = TokenTypes = {}));
