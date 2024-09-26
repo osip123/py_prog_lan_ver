@@ -1,12 +1,3 @@
-// import Lexer from "./core/Lexer/Lexer";
-// import Token from "./core/Token";
-//
-//
-// const lexer = new Lexer(['9', 'нц', '8'])
-//
-// let Tokens:Token[] = lexer.create_token_list();
-//
-// console.log(Tokens)
 
 import CompilerCore from "./compiller/compiller.core";
 
@@ -23,4 +14,5 @@ TokenList.push(Token2)
 
 const compiller = new CompilerCore(TokenList)
 
-compiller.__run_compille();
+let output = compiller.__run_code();
+console.log(output)

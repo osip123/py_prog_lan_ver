@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var TokenTypes_1 = require("../core/TokenTypes");
 var Exseption_1 = require("../Exseptions/Exseption");
 var ExseptionTypes_1 = require("../Exseptions/ExseptionTypes");
-var fs = require('fs');
+// const fs = require('fs')
 var CompillerCore = /** @class */ (function () {
     function CompillerCore(list_compille) {
         this.compille_code = ' ';
@@ -46,8 +46,8 @@ var CompillerCore = /** @class */ (function () {
         console.log(this.compille_code);
     };
     CompillerCore.prototype.__run_code = function () {
-        this.__run_compille();
-        var output = fs.writeFile('./output.js', this.compille_code);
+        var output = this.__run_compille();
+        return output;
     };
     return CompillerCore;
 }());

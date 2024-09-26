@@ -16,13 +16,6 @@ class Token{
     public __print():void{
         console.log(this.Buffer)
     }
-    //
-    // public clear():void{
-    //     this.Buffer = null;
-    //     this.Type = null;
-    //     this.Name = null;
-    // }
-
 }
 
 export default Token

@@ -3,7 +3,7 @@ import {TokenTypes} from "../core/TokenTypes";
 import Exseption from "../Exseptions/Exseption";
 import ExseptionTypes from "../Exseptions/ExseptionTypes";
 
-const fs = require('fs')
+// const fs = require('fs')
 
 
 class CompillerCore {
@@ -26,7 +26,7 @@ class CompillerCore {
                 `)
             }
             if (this.Compille_List[i].Type === TokenTypes.FLOAT){
-                this.compille_code = this.compille_code.concat(`
+                this.compille_code = this.compille_code.concat( `
                     ${this.Compille_List[i].Buffer}
                 `)
             }
@@ -65,8 +65,8 @@ class CompillerCore {
     }
 
     __run_code(){
-        this.__run_compille();
-        const output = fs.writeFile('./output.js', this.compille_code);
+        let output = this.__run_compille();
+        return output
     }
 
 

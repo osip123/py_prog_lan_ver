@@ -18,4 +18,5 @@ var TokenList = [];
 TokenList.push(Token1);
 TokenList.push(Token2);
 var compiller = new compiller_core_1.default(TokenList);
-compiller.__run_compille();
+var output = compiller.__run_code();
+console.log(output);
