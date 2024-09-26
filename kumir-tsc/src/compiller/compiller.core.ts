@@ -3,9 +3,6 @@ import {TokenTypes} from "../core/TokenTypes";
 import Exseption from "../Exseptions/Exseption";
 import ExseptionTypes from "../Exseptions/ExseptionTypes";
 
-// const fs = require('fs')
-
-
 class CompillerCore {
 
     public Compille_List:Token[];
@@ -57,6 +54,10 @@ class CompillerCore {
 
             if (this.Compille_List[i].Type === TokenTypes.RPAR){
                 this.compille_code = this.compille_code.concat(')')
+            }
+
+            if(this.Compille_List[i].Type === TokenTypes.MINUS){
+                this.compille_code = this.compille_code.concat('-')
             }
         }
 
