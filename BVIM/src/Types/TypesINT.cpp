@@ -6,10 +6,10 @@
 
 namespace BVIMvarrible {
     int TypesINT::get_value() {
-        return 0;
+        return buffer;
     }
 
     std::string TypesINT::_to_string() {
-        return {};
+        return "buffer ";
     }
 } // BVIMvarrible
