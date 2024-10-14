@@ -14,16 +14,21 @@ namespace BVIMBaseDataType {
     public:
 
         BaseVartypes type;
-        float buffer_buffer = 0.0f;
-        int int_buffer = 0;
 
         explicit BaseDataType(BaseVartypes type){
             this->type = type;
         }
 
-        void init_buffer(auto val);
+        void init_buffer(float val);
+        void init_buffer(int val);
 
-        void _to_string();
+        auto get_data();
+
+        [[nodiscard]] std::string _to_string() const;
+
+    private:
+        float float_buffer = 0.0f;
+        int int_buffer = 0;
 
     };
 
