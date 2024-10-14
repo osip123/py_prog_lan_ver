@@ -67,6 +67,12 @@ build CMakeFiles/BVIM.dir/src/Nodes/BaseBinnaryNode.cpp.obj: CXX_COMPILER__BVIM_
   OBJECT_DIR = CMakeFiles\BVIM.dir
   OBJECT_FILE_DIR = CMakeFiles\BVIM.dir\src\Nodes
 
+build CMakeFiles/BVIM.dir/src/Nodes/BaseUnaryNode.cpp.obj: CXX_COMPILER__BVIM_unscanned_Debug C$:/Users/endoc/Documents/py_prog_lan_ver/BVIM/src/Nodes/BaseUnaryNode.cpp || cmake_object_order_depends_target_BVIM
+  DEP_FILE = CMakeFiles\BVIM.dir\src\Nodes\BaseUnaryNode.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\BVIM.dir
+  OBJECT_FILE_DIR = CMakeFiles\BVIM.dir\src\Nodes
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target BVIM
@@ -75,7 +81,7 @@ build CMakeFiles/BVIM.dir/src/Nodes/BaseBinnaryNode.cpp.obj: CXX_COMPILER__BVIM_
 #############################################
 # Link the executable BVIM.exe
 
-build BVIM.exe: CXX_EXECUTABLE_LINKER__BVIM_Debug CMakeFiles/BVIM.dir/src/main.cpp.obj CMakeFiles/BVIM.dir/src/Types/TypesINT.cpp.obj CMakeFiles/BVIM.dir/src/Nodes/BaseBinnaryNode.cpp.obj
+build BVIM.exe: CXX_EXECUTABLE_LINKER__BVIM_Debug CMakeFiles/BVIM.dir/src/main.cpp.obj CMakeFiles/BVIM.dir/src/Types/TypesINT.cpp.obj CMakeFiles/BVIM.dir/src/Nodes/BaseBinnaryNode.cpp.obj CMakeFiles/BVIM.dir/src/Nodes/BaseUnaryNode.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\BVIM.dir

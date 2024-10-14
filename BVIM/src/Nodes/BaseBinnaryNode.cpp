@@ -5,33 +5,17 @@
 #include "BaseBinnaryNode.h"
 
 namespace BVIMBinnaryNode {
-    std::string BaseBinnaryNode::expression_to_string() {
-        return std::to_string(arg1) + op + std::to_string(arg2);
-    }
 
-    int BaseBinnaryNode::calc_node_value() {
-        if (op == "+"){
+
+    int BaseBinnaryNode::cala_value() {
+        if(oper == "+"){
             result = arg1 + arg2;
-        } else{
+        }
+        else{
             result = arg1 - arg2;
         }
 
         return result;
+
     }
-
-    std::string BaseBinnaryNode::to_string() {
-        return std::to_string(arg1) + op + std::to_string(arg2);
-    }
-
-    int BaseBinnaryNode::to_int() {
-        return 0;
-    }
-
-    void BaseBinnaryNode::show_expression() {
-        std::cout << &"arg1" [ arg1] << std::endl;
-        std::cout << &"arg2" [ arg2] << std::endl;
-        std::cout << op << std::endl;
-    }
-
-
 } // BVIMBinnaryNode

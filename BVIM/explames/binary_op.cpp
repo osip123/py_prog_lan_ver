@@ -1,6 +1,7 @@
 #include <iostream>
 
-#include "Nodes/BaseBinnaryNode.h"
+#include "../src/Nodes/BaseBinnaryNodeode.h"
+#include "../src/Nodes/BaseBinnaryNode.h"
 
 using namespace BVIMBinnaryNode;
 

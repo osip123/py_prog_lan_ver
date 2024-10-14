@@ -1,15 +1,8 @@
 # ninja log v5
-13	556	7506194269588561	build.ninja	7bd16542d4091c81
-4	421	7506193810776589	CMakeFiles/BVIM.dir/src/main.cpp.obj	832a3904c53ade68
-448	546	7506193812018602	BVIM.exe	f4e482ba9da660e9
+14	255	7506214907350330	build.ninja	7bd16542d4091c81
+30	84	7506211771430466	CMakeFiles/BVIM.dir/src/Nodes/BaseUnaryNode.cpp.obj	6de51b3625d0514b
+25	433	7506214164840991	CMakeFiles/BVIM.dir/src/main.cpp.obj	832a3904c53ade68
+433	516	7506214165632240	BVIM.exe	2ae9f2e9a8816ed3
 10	448	7506193811069973	CMakeFiles/BVIM.dir/src/Types/TypesINT.cpp.obj	b0d1fb14aaedcb6e
-19	394	7506197430697511	CMakeFiles/BVIM.dir/src/Nodes/BaseBinnaryNode.cpp.obj	8622e3dca5a26bb0
-395	503	7506197431743162	BVIM.exe	ac0a3702036f886e
-19	499	7506205046966225	CMakeFiles/BVIM.dir/src/main.cpp.obj	832a3904c53ade68
-25	530	7506205047263124	CMakeFiles/BVIM.dir/src/Nodes/BaseBinnaryNode.cpp.obj	8622e3dca5a26bb0
-3	395	7506205312047064	CMakeFiles/BVIM.dir/src/main.cpp.obj	832a3904c53ade68
-4	413	7506205917866508	CMakeFiles/BVIM.dir/src/main.cpp.obj	832a3904c53ade68
-20	470	7506206382565003	CMakeFiles/BVIM.dir/src/main.cpp.obj	832a3904c53ade68
-25	493	7506206382806042	CMakeFiles/BVIM.dir/src/Nodes/BaseBinnaryNode.cpp.obj	8622e3dca5a26bb0
-4	419	7506206713861280	CMakeFiles/BVIM.dir/src/main.cpp.obj	832a3904c53ade68
-9	437	7506206714054034	CMakeFiles/BVIM.dir/src/Nodes/BaseBinnaryNode.cpp.obj	8622e3dca5a26bb0
+26	770	7506213349548020	CMakeFiles/BVIM.dir/src/Nodes/BaseBinnaryNode.cpp.obj	8622e3dca5a26bb0
+13	263	7506214907350330	build.ninja	7bd16542d4091c81

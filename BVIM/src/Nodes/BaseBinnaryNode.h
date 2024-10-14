@@ -13,24 +13,22 @@ namespace BVIMBinnaryNode {
     class BaseBinnaryNode {
 
     public:
-        static int                                 arg1;
-        static int                                 arg2;
-        static std::string                           op;
+        int arg1;
+        int arg2;
+        int result;
+        std::string oper;
 
-        BaseBinnaryNode(int arg1, int arg2, std::string op){
-            BVIMBinnaryNode::BaseBinnaryNode::arg1 = arg1;
-            BVIMBinnaryNode::BaseBinnaryNode::arg2 = arg2;
-            BVIMBinnaryNode::BaseBinnaryNode::op = op;
+        BaseBinnaryNode(int arg1, int arg2, std::string oper){
+            this->arg1 = arg1;
+            this->arg2 = arg2;
+            this->oper = oper;
         }
 
-        static std::string expression_to_string();
-        static int calc_node_value();
+        int cala_value();
 
-    private:
-        static int result;
-        static std::string to_string() ;
-        static int to_int() ;
-        static void show_expression();
+        [[nodiscard]] std::string _to_string() const{
+            return "arg1" + std::to_string(arg1) + oper +  "arg 2" + std::to_string(arg2);
+        }
 
     };
 

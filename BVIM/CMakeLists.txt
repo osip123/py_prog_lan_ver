@@ -8,4 +8,7 @@ add_executable(BVIM src/main.cpp
         src/Types/TypesINT.h
         src/Types/BVIMIntTypes.h
         src/Nodes/BaseBinnaryNode.cpp
-        src/Nodes/BaseBinnaryNode.h)
+        src/Nodes/BaseBinnaryNode.h
+        src/Nodes/BaseUnaryNode.cpp
+        src/Nodes/BaseUnaryNode.h
+)
