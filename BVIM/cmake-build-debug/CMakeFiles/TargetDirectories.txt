@@ -1,0 +1,3 @@
+C:/Users/endoc/Documents/py_prog_lan_ver/BVIM/cmake-build-debug/CMakeFiles/BVIM.dir
+C:/Users/endoc/Documents/py_prog_lan_ver/BVIM/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/endoc/Documents/py_prog_lan_ver/BVIM/cmake-build-debug/CMakeFiles/rebuild_cache.dir
