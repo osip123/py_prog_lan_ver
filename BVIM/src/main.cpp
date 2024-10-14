@@ -1,15 +1,15 @@
 #include <iostream>
 
-#include "Types/BVIMIntTypes.h"
-#include "Types/TypesINT.h"
+#include "Nodes/BaseBinnaryNode.h"
 
-using namespace BVIMvarrible;
+using namespace BVIMBinnaryNode;
 
 int main() {
 
-    auto* NEWINT = new TypesINT(67, BVIMIntTypes::INT16);
+    auto* node = new BaseBinnaryNode(4, 6, "+");
 
-    NEWINT->_to_string();
+    node->calc_node_value();
+
 
     return 0;
 }

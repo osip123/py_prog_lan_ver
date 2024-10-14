@@ -21,9 +21,9 @@ namespace BVIMvarrible {
             this->type = type;
         }
 
-        int get_value();
+        [[nodiscard]] int get_value() const;
 
-        std::string _to_string();
+        [[nodiscard]] std::string _to_string() const;
 
     };
 
