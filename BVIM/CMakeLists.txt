@@ -6,9 +6,9 @@ set(CMAKE_CXX_STANDARD 23)
 add_executable(BVIM src/main.cpp
         src/Nodes/BaseBinnaryNode.cpp
         src/Nodes/BaseBinnaryNode.h
-        src/Nodes/BaseUnaryNode.cpp
-        src/Nodes/BaseUnaryNode.h
         src/Types/BaseVarTypes.h
         src/Types/BaseDataType.cpp
         src/Types/BaseDataType.h
+        src/Nodes/BaseUnaryNode.cpp
+        src/Nodes/BaseUnaryNode.h
 )
