@@ -5,4 +5,17 @@
 #include "BaseUnaryNode.h"
 
 namespace BVIMBaseUnaryNode {
+
+
+    float BaseUnaryNode::calc_node_value() {
+        if(op == "*"){
+            return arg1 * arg2;
+        }else{
+            return  arg1 / arg2;
+        }
+    }
+
+    double BaseUnaryNode::rase() {
+        return pow(arg1, arg2);
+    }
 } // BVIMBaseUnaryNode
